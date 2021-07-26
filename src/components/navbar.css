@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+  nav {
+    background: #222;
+    padding: 0 15px;
+    color: #fff;
+  }
+  a {
+    color: rgb(194, 194, 194);
+    text-decoration: none;
+    transition: .5s;
+  }
+  
+  .logo-text{
+    color: #fff;
+    letter-spacing: 6px;
+    text-align: left;
+    line-height: 1.6rem;
+
+    font-size: 40px;
+    flex: 1;
+    ;
+  }
+
+  .logo-text-sub{
+    letter-spacing: 6px;
+    text-align: left;
+    font-size: 12px;
+    padding-top: .2rem;
+    padding-left: .15rem;
+
+  }
+  .nav-menu{
+    padding-bottom: 2rem;
+    
+  }
+  .menu,
+  .submenu {
+    list-style-type: none;
+    margin-top: 1rem;
+    padding: auto;
+    gap: 4rem;
+    flex: 1;
+  }
+
+  .item {
+    padding: 10px;
+    color: #fff;
+    font-weight: 900;
+    margin: auto;
+  }
+  .item.button {
+    padding: 9px 5px;
+  }
+  .item:not(.button) a:hover,
+  .item a:hover::after {
+    color: rgb(170, 170, 170);
+    transform: translateX(.3rem);
+    text-shadow: 2px ;
+    
+
+  }
+  /* Mobile menu */
+ 
+  .menu {
+    display: row;
+    color: #fff;
+    justify-content: space-between;
+    transition: 5s;
+  }
+  .menu li a {
+    color: #fff;
+    font-size: 23px;
+    display: block;
+    padding: 1px 1px;
+  }
+  .menu li.subitem a {
+    padding: 1px;
+  }
+  .toggle {
+   display: none;
+   width: 1rem;
+   flex-direction: column;
+   color: #000;
+  }
+  .focus-in-contract-bck {
+    -webkit-animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+
+  .item.button {
+    order: 2;
+  }
+  .item {
+    order: 3;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    width: auto;
+    order: 1;
+    display: block;
+  }
+  .active .item {
+    display: block;
+  }
+  .button.secondary {
+    /* divider between buttons and menu links */
+    border-bottom: 1px #444 solid;
+  }
+  /* Submenu up from mobile screens */
+  .submenu {
+    display: none;
+  }
+  .submenu-active .submenu {
+    display: block;
+  }
+  .has-submenu i {
+    font-size: 12px;
+  }
+  .has-submenu > a::after {
+    font-family: "Font Awesome 5 Free";
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 900;
+    content: "\f078";
+    color: white;
+    padding-left: 5px;
+  }
+  .subitem a {
+    padding: 10px 15px;
+  }
+  .submenu-active {
+    background-color: #111;
+    border-radius: 3px;
+  }
+  
+  /* Tablet menu */
+  @media all and (min-width: 700px) {
+    .menu {
+      justify-content: center;
+    }
+    .logo {
+      flex: 1;
+    }
+    .item.button {
+      width: auto;
+      order: 1;
+      display: block;
+    }
+    .toggle {
+      flex: 1;
+      text-align: right;
+      order: 2;
+    }
+    /* Button up from tablet screen */
+    .menu li.button a {
+      padding: 10px 15px;
+      margin: 5px 0;
+    }
+    .button a {
+      background: #0080ff;
+      border: 1px royalblue solid;
+    }
+    .button.secondary {
+      border: 0;
+    }
+    .button.secondary a {
+      background: transparent;
+      border: 1px #0080ff solid;
+    }
+    .button a:hover {
+      text-decoration: none;
+    }
+    .button:not(.secondary) a:hover {
+      background: royalblue;
+      border-color: darkblue;
+    }
+  }
+  /* Desktop menu */
+  @media all and (min-width: 960px) {
+    .menu {
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      background: none;
+      display: flex;
+    }
+    .logo {
+      order: 0;
+    }
+    .item {
+      order: 1;
+      position: relative;
+      display: block;
+      width: auto;
+    }
+    .button {
+      order: 2;
+      color: #fff;
+    }
+    .submenu-active .submenu {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 68px;
+      background: rgb(255, 255, 255);
+    }
+    .toggle {
+      display: none;
+    }
+    .submenu-active {
+      border-radius: 0;
+    }
+
+    
+   
+  }
