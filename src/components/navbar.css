@@ -11,6 +11,7 @@
     background: #222;
     padding: 0 15px;
     color: #fff;
+ 
   }
   a {
     color: rgb(194, 194, 194);
@@ -38,7 +39,7 @@
 
   }
   .nav-menu{
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     
   }
   .menu,

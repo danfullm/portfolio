@@ -21,7 +21,7 @@ function Navbar() {
              <div className="nav-menu">
 
              <ul className="menu">
-            <li> <Link to="/"><h3 className="logo-text">DAN<br/>FULLMAN</h3><h6 className="logo-text-sub">Front-End Web Developer</h6></Link></li>
+            <li> <Link to="/"><h3 className="logo-text">DAN<br/>FULLMAN</h3><h6 className="logo-text-sub">Web Developer</h6></Link></li>
              {SidebarData.map((item, index) => {
               return (
                 <li key={index} className={item.cName}>

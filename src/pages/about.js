@@ -6,9 +6,10 @@ export default function About() {
              <div className="app-body">
                  <div className="about-section">
                      <div className="about-column">
-                 <h1>Hey! I'm Dan, a selftaught Front End Developer and Creative individual living in the Philly area. </h1>
+                     
+                 <h1> I'm Dan, a self-taught Web Developer, and Creative individual living in the Philly area. </h1>
                <br/>
-                <p>I have been making websites since I was in the first grade. One of the first websites I made was for my teacher to post our what our homework was and when it was due. Since then, I have made websites for many differnet groups that I have been a part of, from fraternities to marching bands.</p>
+                <p>I have been making websites since I was in the first grade. One of the first websites I made was for my teacher to post what our homework was, and when it was due. Since then, I have made websites for many differnet groups that I have been a part of, from fraternities to marching bands.</p>
                <br/>
                 <p>I enjoy creating things that people can interact with. To me, the internet is for exploring and getting lost in.</p>
                <br />
